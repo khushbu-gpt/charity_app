@@ -3,11 +3,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main
-      className="flex flex-col justify-center items-center w-full min-h-screen bg-cover bg-center bg-no-repeat px-4 sm:px-6 md:px-10"
+      className="flex flex-col justify-center items-center w-full min-h-screen bg-cover bg-center bg-no-repeat px-4 sm:px-6 md:px-10 bg-white"
       style={{
-        backgroundImage: "url('/images/main.jpg')",
+        backgroundImage: "url('/images/main3.webp')",
       }}
     >
+
       <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-emerald-600 font-bold text-center py-3">
         Let&rsquo;s be Kind for{" "}
         <span className="text-indigo-900">Children</span>

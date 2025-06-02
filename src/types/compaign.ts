@@ -1,25 +1,30 @@
-interface compaignsType {
-  image: string;
-  title: string;
-  raised: number;
-  goal: number;
-}
+import img1 from "../assets/img1.jpg"
+import img2 from "../assets/img2.jpg"
+import img3 from "../assets/img3.jpg"
 
-export const campaigns: compaignsType[] = [
+// interface compaignsType {
+//   image: string;
+//   title: string;
+//   raised: number;
+//   goal: number;
+// }
+
+
+export const campaigns = [
   {
-    image: "https://nasarna-react.wpocean.com/static/media/img-1.db23ba6d.png",
+    image:img1,
     title: "Ensure Education for every poor children",
     raised: 5000,
     goal: 9000,
   },
   {
-    image: "https://nasarna-react.wpocean.com/static/media/img-2.7f30d201.png",
+    image:img2,
     title: "Supply drinking water for the people",
     raised: 4000,
     goal: 4800,
   },
   {
-    image: "https://nasarna-react.wpocean.com/static/media/img-3.6d6b3c93.png",
+    image:img3,
     title: "Providing Healthy Food for the children",
     raised: 7600,
     goal: 9900,
