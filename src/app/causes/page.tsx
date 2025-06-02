@@ -2,7 +2,7 @@ import Causes from "@/componants/causes";
 import Compaign from "@/componants/compaign";
 import Link from "next/link";
 
-export default function CausesSection() {
+export default function Causespage() {
   return (
     <div className="bg-gray-50">
       {/* Hero section */}
@@ -16,11 +16,11 @@ export default function CausesSection() {
         {/* Content */}
         <div className="relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold">Our Causes</h2>
-          <p className="mt-2 text-lg">
-            <Link href="/" className="text-green-400">
+          <p className="mt-2 text-base">
+            <Link href="/" className="hover:text-green-600">
               Home /
             </Link>
-            Causes
+            <span className="px-1 text-green-600">Causes</span>
           </p>
         </div>
       </section>

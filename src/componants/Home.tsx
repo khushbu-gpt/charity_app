@@ -1,19 +1,29 @@
-import Image from "next/image";
-import child from '@/assets/child.png';
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main className="bg-gray-50 flex justify-center place-items-center w-full  min-h-screen px-30">
-      <section className="w-[50%]">
-        <h2 className="text-6xl text-emerald-600 font-bold py-3">Let&rsquo;s be Kind for <span className="text-indigo-900">Children</span></h2>
-        <p className="w-[60%] py-4">
-          High Quality Charity Theme in Envato Market. You Can Satisfied
-          Yourself By Helping.
-        </p>
-        <button className="bg-emerald-600 rounded-full px-6 py-3 font-semibold text-white my-4">Donate Now</button>
-      </section>
-      <section className="w-[50%]">
-      <Image src={child} alt="logo" width={600} height={600} className="bg-contain rounded-full"/>
-      </section>
+    <main
+      className="flex flex-col justify-center items-center w-full min-h-screen bg-cover bg-center bg-no-repeat px-4 sm:px-6 md:px-10"
+      style={{
+        backgroundImage: "url('/images/main.jpg')",
+      }}
+    >
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-emerald-600 font-bold text-center py-3">
+        Let&rsquo;s be Kind for{" "}
+        <span className="text-indigo-900">Children</span>
+      </h2>
+
+      <p className="text-center text-base sm:text-lg md:text-xl max-w-xl py-4 text-white bg-black/50 px-4 rounded">
+        High Quality Charity Theme in Envato Market. You Can Satisfied Yourself
+        By Helping.
+      </p>
+
+      <Link
+        href="/donate"
+        className="bg-emerald-600 hover:bg-emerald-700 transition-colors duration-300 rounded px-6 py-3 font-semibold text-white mt-4"
+      >
+        Donate Now
+      </Link>
     </main>
   );
 }
