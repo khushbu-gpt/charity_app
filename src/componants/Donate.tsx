@@ -1,6 +1,6 @@
 export function Donate() {
   return (
-    <main className="min-h-screen w-full flex flex-col items-center px-4 md:px-10 lg:px-48 py-10 bg-gray-50">
+    <div className="min-h-screen w-full flex flex-col items-center px-4 md:px-10 lg:px-48 py-10 bg-gray-50">
       <h2 className="text-indigo-900 text-2xl md:text-3xl font-bold mb-10 text-center">
         Make a Donation
       </h2>
@@ -95,6 +95,6 @@ export function Donate() {
           </button>
         </div>
       </form>
-    </main>
+    </div>
   );
 }

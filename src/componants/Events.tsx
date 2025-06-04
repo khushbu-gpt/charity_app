@@ -51,7 +51,7 @@ export const ImageList = [
 
 export default function Event() {
   return (
-    <main className="w-full flex flex-col items-center justify-center py-10 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48 bg-gray-50">
+    <main className="w-full flex flex-col items-center justify-center py-10 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48">
       {/* Section Heading */}
       <section className="text-center mb-10">
         <h3 className="text-emerald-600 text-lg font-medium">Our Events</h3>
